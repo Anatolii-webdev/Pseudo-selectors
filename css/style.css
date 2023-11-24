@@ -1,0 +1,32 @@
+body {
+  font-size: 150%;
+  font-weight: bold;
+}
+.one p::first-letter {
+  font-style: italic;
+  color: red;
+}
+.two p::first-line {
+  font-style: italic;
+  color: red;
+}
+.three p::selection {
+  background: green;
+}
+.four p::before {
+  content: "Начало:";
+  color: red;
+}
+.four p::after {
+  content: ":конец!";
+  color: green;
+}
+.five li:first-of-type {
+  color: red;
+}
+.five li:last-of-type {
+  color: green;
+}
+.six li:nth-of-type(3n + 3) {
+  color: red;
+}
